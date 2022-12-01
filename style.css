@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    
 }
 
 .app {
@@ -35,7 +36,7 @@
     height: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) rotate(-90deg);
     pointer-events: none;
 }
 
@@ -50,26 +51,28 @@ video {
     position: fixed;
     top: 0%;
     left: 0%;
-    width: 100%;
+    width: 100vw;
     z-index: -10;
+
 
 }
 
 .time-select button,
 .sound-picker button {
-    color: white;
+    color: lightgrey;
     width: 30%;
     height: 10%;
     background: none;
-    border: 2px solid white;
+    border: 2px solid lightgrey;
     cursor: pointer;
     border-radius: 20px;
     font-size: 18px;
     transition: all 0.5s ease;
+    
 }
 
 .time-select button:hover {
-    color: black;
+    color: grey;
     background: white;
 }
 
@@ -92,3 +95,5 @@ video {
     height: 100%;
 
 }
+
+
